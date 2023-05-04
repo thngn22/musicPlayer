@@ -1,0 +1,156 @@
+:root {
+  --primary-color: #ec1f55;
+  --text-color: #333;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.fas {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.player {
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.dashboard {
+  padding: 16px 16px 14px;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  max-width: 480px;
+  top: 0;
+  z-index: 1;
+}
+.dashboard header {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.dashboard header h4 {
+  color: var(--primary-color);
+  font-size: 12px;
+  line-height: 18.4px;
+}
+.dashboard header h2 {
+  color: var(--text-color);
+  font-size: 20px;
+  line-height: 30.4px;
+}
+.dashboard .cd {
+  width: 200px;
+  margin: auto;
+}
+.dashboard .cd .cd_thumb {
+  width: 100%;
+  padding-top: 100%;
+  background-image: url(./assets/img/music/anh_da_on_hon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin: auto;
+}
+.dashboard .control {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  justify-content: space-around;
+  padding: 18px 0 8px 0;
+}
+.dashboard .control .btn {
+  color: #666;
+  padding: 18px;
+  font-size: 20px;
+}
+.dashboard .control .btn-toggle-play {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  font-size: 28px;
+  color: #fff;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard .control .btn-toggle-play .icon-pause {
+  display: none;
+}
+
+.progress-time {
+  display: flex;
+  justify-content: space-between;
+  color: var(--white-color);
+  font-size: 1rem;
+  margin: 0 10px 0;
+}
+
+.progress {
+  width: 100%;
+  -webkit-appearance: none;
+  height: 6px;
+  background: var(--white-color);
+  outline: none;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.playlist {
+  overflow-y: scroll;
+  position: relative;
+  top: 430px;
+  height: 400px;
+  scroll-behavior: smooth;
+  padding: 12px;
+}
+.playlist .song {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.playlist .song .thumb {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-size: cover;
+  margin: 0 8px;
+}
+.playlist .song .body {
+  flex: 1;
+  padding: 0 16px;
+}
+.playlist .song .body .title {
+  font-size: 18px;
+  color: var(--text-color);
+  line-height: 24px;
+}
+.playlist .song .body .author {
+  font-size: 12px;
+  color: #999;
+  line-height: 24px;
+}
+.playlist .song .option {
+  padding: 16px 8px;
+  color: #999;
+  font-size: 24px;
+}/*# sourceMappingURL=styless.css.map */
